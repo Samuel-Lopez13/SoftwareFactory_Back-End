@@ -29,6 +29,8 @@ public class UsuarioController
     /// <code>200</code>
     /// Es un valor nuevo
     /// </returns>
+    
+    [AllowAnonymous]
     [HttpGet("Usuarios")]
     public async Task<List<ListaUsuarioResponse>> ObtenerUsuarios()
     {
